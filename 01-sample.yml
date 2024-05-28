@@ -7,11 +7,6 @@
                and this is the second line
     - name: ping
       ansible.builtin.ping:
-
-
     - name: ping test
-      hosts: all
-      tasks:
-        - name: Demo
-          ping:
+      ping:
 
