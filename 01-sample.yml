@@ -5,3 +5,5 @@
       ansible.builtin.debug:
           msg: Hello World
                and this is the second line
+    - name: ping
+      ansible.builtin.ping:
