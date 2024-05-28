@@ -1,7 +1,7 @@
 - name: Example from an Ansible Playbook
   hosts: all
   tasks:
-    - ansible.builtin.ping:
+    - ansible.builtin.ping: ping
 
     #- name: Print Hello World
       #ansible.builtin.debug:
