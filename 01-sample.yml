@@ -4,8 +4,3 @@
     - name: Print Hello World
       ansible.builtin.debug:
         msg: Hello World
-               and this is the second line
-    - name: ping
-      ansible.builtin.ping:
-    - name: ping test
-      ping:
