@@ -1,0 +1,9 @@
+- name: Vault demo
+  hosts: localhost
+  vars:
+    username: admin
+    password: admin1234
+  tasks:
+    - name: print Name and Password
+      ansible.builtin.debug:
+        msg: Username id {{username}} and password is {{password}}
