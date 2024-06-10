@@ -13,12 +13,10 @@
 
 
     - name: Print fruit names in Aldi
-      vars:
-        Fruit_name: Orange and Banane
       ansible.builtin.debug:
         msg: Fruit name is - {{Fruit_name}}
-      #vars:
-        #Fruit_name: Apple and Banane
+      vars:
+        Fruit_name: Apple and Banane
 
 
     - name: Print the given project name
