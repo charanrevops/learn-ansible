@@ -13,9 +13,14 @@
         - tomato
         - kaju
         - pandu
-      register: exm
 
-    - name: Print Fruit register with the help of loops
+    - name:  Print Course
       ansible.builtin.debug:
-        msg: "{{exm}}"
+        msg: Course name is {{item["course_name"]}}, Trainer name is {{["trainer_name"]}}
+      loop:
+        - {course_name: Devops, trainer_name: Raju}
+        - {course_name: AWS, trainer_name: Naveen}
+        -
+
+
 
