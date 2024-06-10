@@ -83,5 +83,7 @@
         - and the is the second line
         -
         - "{{OUT.stdout}}"
+        - 0
+        - 0
         - "{{OUT.stdout *10 }}"
 
