@@ -17,26 +17,26 @@
         msg: URL of the website is - {{exx}}
 
 
-    - name: Print fruit names in Aldi
-      ansible.builtin.debug:
-        msg: Fruit name is - {{Fruit_name}}
-      vars:
-        Fruit_name: Apple and Banane
-
-
-    - name: Print the given project name
-      ansible.builtin.debug:
-        msg: Project Name we have assigned is {{Project_Name}}
-
-
-    - name: Print the User Name we have given
-      ansible.builtin.debug:
-        msg: User Name we have assigned is {{User_Name}}
-
-
-    - name: Print Command Line Input Variable
-      ansible.builtin.debug:
-        msg: The Course Name we have assigned is {{Course_Name}}
+#    - name: Print fruit names in Aldi
+#      ansible.builtin.debug:
+#        msg: Fruit name is - {{Fruit_name}}
+#      vars:
+#        Fruit_name: Apple and Banane
+#
+#
+#    - name: Print the given project name
+#      ansible.builtin.debug:
+#        msg: Project Name we have assigned is {{Project_Name}}
+#
+#
+#    - name: Print the User Name we have given
+#      ansible.builtin.debug:
+#        msg: User Name we have assigned is {{User_Name}}
+#
+#
+#    - name: Print Command Line Input Variable
+#      ansible.builtin.debug:
+#        msg: The Course Name we have assigned is {{Course_Name}}
 
 
     - name: List Variables
@@ -44,9 +44,9 @@
         msg: list of fruit names in sequence is {{ Fruits[0] }}
       vars:
         Fruits:
-          -apple
-          -banane
-          -orange
+          - apple
+          - banane
+          - orange
 
 
 
