@@ -74,9 +74,9 @@
 
     - name: Execute shell command
       ansible.builtin.shell: uptime
-      register: OUTin
+      register: OUT(stdout)
 
     - name: Print out command
       ansible.builtin.debug:
-        msg: "{{OUTin}}"
+        msg: "{{OUT(stdout)}}"
 
