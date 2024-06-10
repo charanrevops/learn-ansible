@@ -83,4 +83,5 @@
         - and the is the second line
         -
         - "{{OUT.stdout}}"
+        - "{{OUT.stdout | regex_replace('^.*up ([0-9]+) day.*', '\\1') | int }}"
 
