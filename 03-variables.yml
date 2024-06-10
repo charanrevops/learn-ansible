@@ -79,8 +79,8 @@
     - name: Print out command
       ansible.builtin.debug:
         msg:
-        - "{{OUT.split('\n')}}"
+        - "{{OUT}}"
         -  this is the new line('\n') }}"
         - '\n************************'
-        - "{{OUT.stdout.split('\n')*10}}"
+        - "{{OUT.stdout.split('\n')*100}}"
 
