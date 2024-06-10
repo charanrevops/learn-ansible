@@ -1,0 +1,29 @@
+- name: test
+  hosts: localhost
+
+  vars:
+
+    string_with_escaped_newlines1: 'Each \nword \nin \nnew \nline'
+    string_with_escaped_newlines2: "Each \\nword \\nin \\nnew \\nline"
+
+  tasks:
+
+    - command: ~/myScript.sh "{{ string_with_escaped_newlines1 }}"
+      register: out
+    - debug:
+        var: out.stdout_lines
+
+    - command: ~/myScript.sh '{{ string_with_escaped_newlines1 }}'
+      register: out
+    - debug:
+        var: out.stdout_lines
+
+    - command: ~/myScript.sh "{{ string_with_escaped_newlines2 }}"
+      register: out
+    - debug:
+        var: out.stdout_lines
+
+    - command: ~/myScript.sh '{{ string_with_escaped_newlines2 }}'
+      register: out
+    - debug:
+        var: out.stdout_lines
