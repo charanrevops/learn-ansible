@@ -45,29 +45,38 @@
 #        msg: The Course Name we have assigned is {{Course_Name}}
 
 
-    - name: List Variables
-      ansible.builtin.debug:
-        msg: list of fruit names in sequence is {{Fruits[0]}}, {{Fruits[1]}}
-      vars:
-        Fruits:
-          - apple
-          - banane
-          - orange
-
-    - name: Map Variables
-      ansible.builtin.debug:
-        msg: Course name is {{ Course["Name"][1] }} and the Trainer Name is {{ Course["Trainer"] }}
-      vars:
-        Course:
-          Name:
-          - Devops
-          - Java
-          Trainer: raghu
-
+#    - name: List Variables
+#      ansible.builtin.debug:
+#        msg: list of fruit names in sequence is {{Fruits[0]}}, {{Fruits[1]}}
+#      vars:
+#        Fruits:
+#          - apple
+#          - banane
+#          - orange
+#
+#    - name: Map Variables
+#      ansible.builtin.debug:
+#        msg: Course name is {{ Course["Name"][1] }} and the Trainer Name is {{ Course["Trainer"] }}
+#      vars:
+#        Course:
+#          Name:
+#          - Devops
+#          - Java
+#          Trainer: raghu
+#
 
 
 
 # you can access a variable without qoutes, however, if the value is starting with variable then use single/double qoutes
 #variable not starting with value Ex: msg: URL -{{URL}}
 # variable stating with value Ex: msg: "{{URl}}", in this case we need to qoute it.
+
+
+    - name: Execute shell command
+      ansible.builtin.shell: uptime
+      register: OUT
+
+    - name: Print out command
+      ansible.builtin.debug:
+        msg: "{{OUT}}"
 
