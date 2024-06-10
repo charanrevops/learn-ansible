@@ -2,6 +2,12 @@
   hosts: localhost
   vars:
     exx: this is charan play.example.com and the website is example website
+    Number1: 1
+    Number2: 3.2
+    BOOLEAN1: true
+    BOOLEAN2: false
+    BOOLEAN3: yes
+    BOOLEAN4: no
 
 
 
@@ -14,7 +20,7 @@
   tasks:
     - name: Print URL of example
       ansible.builtin.debug:
-        msg: URL of the website is - {{exx}}
+        msg: URL of the website is - {{exx}} and the number: {{Number1}}
 
 
 #    - name: Print fruit names in Aldi
