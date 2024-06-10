@@ -7,3 +7,10 @@
       ansible.builtin.debug:
         msg: URL of the website is - {{exx}}
 
+
+    - name: Print fruit names in Aldi
+      ansible.builtin.debug:
+        msg: Fruit name is - {{Fruit}}
+      vars:
+        Fruit: Apple
+
