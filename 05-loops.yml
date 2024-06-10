@@ -7,12 +7,12 @@
       loop:
         - apple
         - banane
-        - orange
-        - guava
-        - lime
-        - tomato
-        - kaju
-        - pandu
+#        - orange
+#        - guava
+#        - lime
+#        - tomato
+#        - kaju
+#        - pandu
 
     - name:  Print Course
       ansible.builtin.debug:
