@@ -74,13 +74,13 @@
 
     - name: Execute shell command
       ansible.builtin.shell: uptime
-      register: OUT
+      register: charan
 
     - name: Print out command
       ansible.builtin.debug:
         msg:
         - "{{OUT}}"
         -  this is the new line('\n') }}"
-        -
-        - "{{OUT.stdout.split('\n')*5}}"
+        - this is charan
+        - "{{charan.stdout.split('\n')*5}}"
 
