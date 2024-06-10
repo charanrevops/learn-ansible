@@ -20,7 +20,7 @@
   tasks:
     - name: Print URL of example
       ansible.builtin.debug:
-        msg: '{{exx}}'
+        msg: '{{exx}} and the number is'
 
 
 #    - name: Print fruit names in Aldi
