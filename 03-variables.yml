@@ -39,5 +39,14 @@
         msg: The Course Name we have assigned is {{Course_Name}}
 
 
+    - name: List Variables
+      ansible.builtin.debug:
+        msg: list of fruit names in sequence is {{ Fruits[0] }}
+      vars:
+        Fruits:
+          -apple
+          -banane
+          -orange
+
 
 
