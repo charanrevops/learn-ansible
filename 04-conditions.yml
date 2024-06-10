@@ -4,7 +4,7 @@
     - name: Welcome to Charan DevOps Course with explanation
       ansible.builtin.debug:
         msg: Welcome to Devops Course
-      when: course_name=='Devops' or course_name='Java'
+      when: course_name=='Devops' or course_name=='Java'
 
     - name: Welcome to Charan AWS Course with explanation
       ansible.builtin.debug:
