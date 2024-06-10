@@ -20,7 +20,7 @@
       loop:
         - {course_name: Devops, trainer_name: Raju}
         - {course_name: AWS, trainer_name: Naveen}
-        -
+
 
 
 
