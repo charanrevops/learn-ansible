@@ -18,7 +18,7 @@
       ansible.builtin.debug:
         msg: Fruit name is - {{Fruit_name}}
       #vars:
-        Fruit_name: Apple and Banane
+        #Fruit_name: Apple and Banane
 
 
     - name: Print the given project name
