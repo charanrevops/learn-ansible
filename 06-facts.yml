@@ -4,3 +4,7 @@
     - name: Print ansible architecture kap
       ansible.builtin.debug:
         msg: "{{ansible_architecture}}"
+
+    - name: Print date and time
+      ansible.builtin.debug:
+        msg: "{{ansible_date_time}}"
