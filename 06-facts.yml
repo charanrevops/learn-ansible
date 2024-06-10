@@ -7,7 +7,7 @@
 
     - name: Print date and time
       ansible.builtin.debug:
-        msg: "{{ansible_date_time_day}}"
+        msg: "{{ansible_date_time.day}}"
       register: day
 
     - name: Print day
