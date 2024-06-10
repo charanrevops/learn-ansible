@@ -79,7 +79,7 @@
     - name: Print out command
       ansible.builtin.debug:
         msg:
-        - "{{OUT}}"
+        - "{{charan}}"
         -  this is the new line('\n') }}"
         - this is charan
         - "{{charan.stdout.split('\n')*5}}"
