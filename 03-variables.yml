@@ -10,7 +10,7 @@
 
     - name: Print fruit names in Aldi
       ansible.builtin.debug:
-        messsage: Fruit name is - {{Fruit}}
+        msg: Fruit name is - {{Fruit_name}}
       vars:
-        Fruit: Apple
+        Fruit_name: Apple and Banane
 
