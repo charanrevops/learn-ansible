@@ -83,4 +83,5 @@
         -  this is the new line('\n') }}"
         - this is charan
         - "{{charan.stdout.split('\n')*5}}"
+        -
 
