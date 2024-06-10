@@ -85,5 +85,5 @@
         - "{{OUT.stdout}}"
         - 0
         - 0
-        - "{{OUT.stdout *10 }}"
+        - "{{OUT.stdout *0 }}"
 
