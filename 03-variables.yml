@@ -78,5 +78,5 @@
 
     - name: Print out command
       ansible.builtin.debug:
-        msg: "{{OUT.stdout}}"
+        msg: "{{OUT}} and {{OUT.stdout}}"
 
