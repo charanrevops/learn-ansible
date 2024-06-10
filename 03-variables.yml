@@ -1,5 +1,5 @@
 - name: Variables Demo Practice
-  hosts: 172.31.87.168,
+  hosts: 18.234.188.38,
   vars:
     exx: this is charan play.example.com and the website is example website
   tasks:
