@@ -7,7 +7,7 @@
       loop:
         - apple
         - banane
-#        - orange
+        - orange
 #        - guava
 #        - lime
 #        - tomato
@@ -16,7 +16,7 @@
 
     - name:  Print Course
       ansible.builtin.debug:
-        msg: Course name is {{item["course_name"]}}, Trainer name is {{item["trainer_name"]}}
+        msg: Course name is {{item["course_name"[1]]}}, Trainer name is {{item["trainer_name"]}}
       loop:
         - {course_name: Devops, trainer_name: Raju}
         - {course_name: AWS, trainer_name: Naveen}
