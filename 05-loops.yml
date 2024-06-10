@@ -3,7 +3,7 @@
   tasks:
     - name: Print Fruit names with the help of loops
       ansible.builtin.debug:
-        msg: Fruit Name in sequence is {{i}}
+        msg: Fruit Name in sequence is {{item}}
       loop:
         - apple
         - banane
