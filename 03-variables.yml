@@ -24,8 +24,9 @@
         msg: Project Name we have assigned is {{Project_Name}}
 
 
-    - name: Print User Name we have given
+    - name: Print the User Name we have given
       ansible.builtin.debug:
-        msg: Name we have assigned is {{Project_Name}}
+        msg: User Name we have assigned is {{User_Name}}
+
 
 
