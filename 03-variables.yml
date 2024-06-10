@@ -1,7 +1,7 @@
 - name: Variables Demo Practice
   hosts: localhost
   vars:
-    exx: play.example.com
+    exx: play.example.com ans the website is example website
   tasks:
     - name: Print URL of example
       ansible.builtin.debug:
