@@ -68,5 +68,6 @@
 
 
 # you can access a variable without qoutes, however, if the value is starting with variable then use single/double qoutes
-#variable not starting with valu
+#variable not starting with value Ex: msg: URL -{{URL}}
+# variable stating with value Ex: msg: "{{URl}}", in this case we need to qoute it.
 
