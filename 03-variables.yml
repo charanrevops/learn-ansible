@@ -73,7 +73,7 @@
 
 
     - name: Execute shell command
-      ansible.builtin.shell: uptime_stdout
+      ansible.builtin.shell: stdout
       register: OUT
 
     - name: Print out command
