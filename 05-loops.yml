@@ -15,7 +15,7 @@
         - pandu
       register: exm
 
-    - name: Print Fruit names with the help of loops
+    - name: Print Fruit register with the help of loops
       ansible.builtin.debug:
         msg: "{{exm}}"
 
