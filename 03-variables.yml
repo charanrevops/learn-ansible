@@ -82,5 +82,5 @@
         - "{{OUT}}"
         -  this is the new line('\n') }}"
         -   {{""}}
-        - "{{OUT.stdout.split('\n')*100}}"
+        - "{{OUT.stdout.split('\n')*5}}"
 
