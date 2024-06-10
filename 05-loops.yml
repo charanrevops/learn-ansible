@@ -17,7 +17,7 @@
     - name:  Print Course
       ansible.builtin.debug:
         msg: Course name is {{item["course_name"]}}, Trainer name is {{item["trainer_name"]}}
-      when: item["course_name"]=="AWS" or item["course_name"]=="Devops"
+      when: item["course_name"]=="AWS" and item["course_name"]=="Devops"
       loop:
         - {course_name: Devops, trainer_name: Raju}
         - {course_name: AWS, trainer_name: Naveen}
