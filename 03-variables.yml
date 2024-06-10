@@ -50,7 +50,7 @@
 
     - name: Map Variables
       ansible.builtin.debug:
-        msg: Course name is {{Course[Name]}} and the Trainer Name is {{Course[Trainer]}}
+        msg: Course name is {{ Course["Name"] }} and the Trainer Name is {{ Course["Trainer"] }}
       vars:
         Course:
           Name: Devops
