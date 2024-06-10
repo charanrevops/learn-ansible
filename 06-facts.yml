@@ -1,0 +1,6 @@
+- name: Setup Facts explanation
+  hosts: localhost
+  tasks:
+    - name: Print ansible architecture kap
+      ansible.builtin.debug:
+        msg: "{{ansible_architecture}}"
