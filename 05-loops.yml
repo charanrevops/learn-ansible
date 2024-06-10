@@ -12,5 +12,10 @@
         - lime
         - tomato
         - kaju
+        - pandu
       register: exm
+
+    - name: Print Fruit names with the help of loops
+      ansible.builtin.debug:
+        msg: "{{exm}}"
 
