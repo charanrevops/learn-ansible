@@ -1,7 +1,10 @@
 - name: Variables Demo Practice
   hosts: localhost
   vars:
-    exx: this is charan play.example.com and the website is example website
+    exx: this is charan play.example.com and the website is example website+
+  vars_files:
+    - vars.yml
+
   tasks:
     - name: Print URL of example
       ansible.builtin.debug:
@@ -13,4 +16,9 @@
         msg: Fruit name is - {{Fruit_name}}
       vars:
         Fruit_name: Apple and Banane
+
+
+    - name: Print User Name we have given
+      ansible.builtin.debug:
+        msg: Name we have assigned is {{Name}}
 
