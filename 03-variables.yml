@@ -80,7 +80,7 @@
       ansible.builtin.debug:
         msg:
         - "{{OUT}}"
-        - and the is the second line "{{ msg.split('\n') }}"
+        - "{{ msg.split('\n') }}"
         - '************************'
         - "{{OUT.stdout}}"
 
