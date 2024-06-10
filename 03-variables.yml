@@ -41,7 +41,7 @@
 
     - name: List Variables
       ansible.builtin.debug:
-        msg: list of fruit names in sequence is {{Fruits[2]}}
+        msg: list of fruit names in sequence is {{Fruits[0]}}, {{Fruits[1]}}
       vars:
         Fruits:
           - apple
