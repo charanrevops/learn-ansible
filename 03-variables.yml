@@ -20,7 +20,7 @@
   tasks:
     - name: Print URL of example
       ansible.builtin.debug:
-        msg: URL of the website is - {{exx}} and the number is  {{Number2}}
+        msg: {{exx}} and the number is  {{Number2}}
 
 
 #    - name: Print fruit names in Aldi
@@ -67,5 +67,6 @@
 
 
 
-
+# you can access a variable without qoutes, however, if the value is starting with variable then use single/double qoutes
+#variable not starting with valu
 
