@@ -3,7 +3,7 @@
   vars:
     exx: this is charan play.example.com and the website is example website
     Number1: 1
-    Number2: 3.2
+    Number2: 100.99
     BOOLEAN1: true
     BOOLEAN2: false
     BOOLEAN3: yes
