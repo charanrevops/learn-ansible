@@ -20,7 +20,7 @@
   tasks:
     - name: Print URL of example
       ansible.builtin.debug:
-        msg: URL of the website is - {{exx}} #and the number: {{Number1}}
+        msg: URL of the website is - {{exx}} and the number is  {{Number1}}
 
 
 #    - name: Print fruit names in Aldi
@@ -30,9 +30,9 @@
 #        Fruit_name: Apple and Banane
 #
 #
-    - name: Print the given project name
-      ansible.builtin.debug:
-        msg: Project Name we have assigned is {{Project_Name}}
+#    - name: Print the given project name
+#      ansible.builtin.debug:
+#        msg: Project Name we have assigned is {{Project_Name}}
 #
 #
 #    - name: Print the User Name we have given
